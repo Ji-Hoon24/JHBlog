@@ -1,0 +1,42 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.7.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.jhblog'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2')
+    compile('org.json:json:20160810')
+    compile('com.fasterxml.jackson.core:jackson-core:2.9.8')
+    compile('com.fasterxml.jackson.core:jackson-annotations:2.9.8')
+    compile('com.fasterxml.jackson.core:jackson-databind:2.9.8')
+    compile('ch.qos.logback:logback-classic:1.1.3')
+    compile('ch.qos.logback:logback-core:1.1.3')
+    compile('org.slf4j:slf4j-api:1.7.21')
+    compile('io.springfox:springfox-swagger2:2.2.2')
+    compile('org.projectlombok:lombok')
+    compile('io.springfox:springfox-swagger-ui:2.2.2')
+    runtimeOnly('mysql:mysql-connector-java')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
