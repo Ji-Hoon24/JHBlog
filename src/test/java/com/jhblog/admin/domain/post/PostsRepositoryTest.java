@@ -33,9 +33,7 @@ public class PostsRepositoryTest {
             .title(title)
             .detail(detail)
             .viewCnt(0)
-            .regDt(new Date())
             .regId("admin")
-            .udtDt(new Date())
             .udtId("admin")
             .build());
 

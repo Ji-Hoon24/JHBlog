@@ -24,7 +24,7 @@ public class PostsService {
     @Transactional
     public Integer update(Integer id, PostsUpdateRequestDto dto) {
         Posts posts = postsRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id=" + id));
-        posts.update(dto.getTitle(), dto.getDetail(), dto.getUdtId(), dto.getUdtDt());
+        posts.update(dto.getTitle(), dto.getDetail(), dto.getUdtId());
         return id;
     }
 

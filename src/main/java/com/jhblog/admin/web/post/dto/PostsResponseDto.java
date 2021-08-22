@@ -12,9 +12,7 @@ public class PostsResponseDto {
     private String title;
     private String detail;
     private Integer viewCnt;
-    private Date regDt;
     private String regId;
-    private Date udtDt;
     private String udtId;
 
     public PostsResponseDto(Posts entity) {
@@ -22,9 +20,7 @@ public class PostsResponseDto {
         this.title = entity.getTitle();
         this.detail = entity.getDetail();
         this.viewCnt = entity.getViewCnt();
-        this.regDt = entity.getRegDt();
         this.regId = entity.getRegId();
-        this.udtDt = entity.getUdtDt();
         this.udtId = entity.getUdtId();
     }
 }

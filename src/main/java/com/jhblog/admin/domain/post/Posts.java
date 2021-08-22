@@ -27,33 +27,24 @@ public class Posts extends BaseTimeEntity {
     private Integer viewCnt;
 
     @Column
-    private java.util.Date regDt;
-
-    @Column
     private String regId;
-
-    @Column
-    private Date udtDt;
 
     @Column
     private String udtId;
 
     @Builder
-    public Posts(String title, String detail, Integer viewCnt, Date regDt, String regId, Date udtDt, String udtId) {
+    public Posts(String title, String detail, Integer viewCnt, String regId, String udtId) {
         this.title = title;
         this.detail = detail;
         this.viewCnt = viewCnt;
-        this.regDt = regDt;
         this.regId = regId;
-        this.udtDt = udtDt;
         this.udtId = udtId;
     }
 
-    public void update(String title, String detail, String udtId, Date udtDt) {
+    public void update(String title, String detail, String udtId) {
         this.title = title;
         this.detail = detail;
         this.udtId = udtId;
-        this.udtDt = udtDt;
     }
 
 }
