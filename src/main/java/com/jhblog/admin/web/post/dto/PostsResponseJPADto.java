@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.util.Date;
 
 @Getter
-public class PostsResponseDto {
+public class PostsResponseJPADto {
 
     private Integer seqNo;
     private String title;
@@ -15,7 +15,7 @@ public class PostsResponseDto {
     private String regId;
     private String udtId;
 
-    public PostsResponseDto(Posts entity) {
+    public PostsResponseJPADto(Posts entity) {
         this.seqNo = entity.getSeqNo();
         this.title = entity.getTitle();
         this.detail = entity.getDetail();

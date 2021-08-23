@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Poor Story';
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.head-left {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 50px;
+    width: 300px;
+    float: left;
+}
+.head-right {
+    float: right;
+    padding-top:10px;
+    padding-right:50px;
+}
+.head {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1;
+}
+.footer {
+    width: 100%;
+    margin-bottom: 100px;
+}
+.contact-mail {
+    float: left;
+    padding-left: 50px;
+    width: 35%;
+}
+.contact-kakao {
+    float: left;
+    padding-left: 50px;
+    width: 35%;
+}
+.white-line {
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+}
+.body {
+    position: relative;
+    width: 1200px;
+    padding: 20px 30px;
+    margin: 50px auto;
+}
+.main-button {
+    font-family: 'Gamja Flower';
+    font-size: 40px;
+}
+.main-intro {
+    display: table;
+    min-height: 300px;
+    width: 100%;
+}
+.main-intro > h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+.main-intro > h1 > span {
+    color: yellow;
+}
+.main-td {
+    width: 300px;
+    padding: 10px 15px;
+    height: 400px;
+}
+.main-list {
+    border-top: 1px solid white;
+}
+.main-img {
+    width: 100%;
+}
+.date-show {
+    text-align: right;
+    margin: 0px;
+    font-size: 15px;
+}

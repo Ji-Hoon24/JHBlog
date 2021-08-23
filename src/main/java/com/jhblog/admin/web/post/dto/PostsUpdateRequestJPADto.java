@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.util.Date;
 
 @Getter
-public class PostsUpdateRequestDto {
+public class PostsUpdateRequestJPADto {
 
     private String title;
     private String detail;
@@ -14,7 +14,7 @@ public class PostsUpdateRequestDto {
     private Date udtDt;
 
     @Builder
-    public PostsUpdateRequestDto(String title, String detail, String udtId, Date udtDt) {
+    public PostsUpdateRequestJPADto(String title, String detail, String udtId, Date udtDt) {
         this.title = title;
         this.detail = detail;
         this.udtId = udtId;

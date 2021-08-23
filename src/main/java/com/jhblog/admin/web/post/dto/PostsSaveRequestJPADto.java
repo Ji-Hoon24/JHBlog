@@ -9,7 +9,7 @@ import java.util.Date;
 
 @Getter
 @NoArgsConstructor
-public class PostsSaveRequestDto {
+public class PostsSaveRequestJPADto {
     private String title;
     private String detail;
     private Integer viewCnt;
@@ -17,7 +17,7 @@ public class PostsSaveRequestDto {
     private String udtId;
 
     @Builder
-    public PostsSaveRequestDto(String title, String detail, Integer viewCnt, String regId, String udtId) {
+    public PostsSaveRequestJPADto(String title, String detail, Integer viewCnt, String regId, String udtId) {
         this.title = title;
         this.detail = detail;
         this.viewCnt = viewCnt;

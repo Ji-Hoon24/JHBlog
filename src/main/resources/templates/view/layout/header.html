@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header th:fragment="headerFragment">
+    <div class="head">
+        <div class="head-left">
+            <a href="/" class="main-button">JH's Blog</a>
+        </div>
+        <div class="head-right">
+            <button onclick="fnMovePage('intro')">intro</button>
+            <button onclick="fnMovePage('login')">login</button>
+            <button onclick="fnMovePage('findMine')">findMine</button>
+            <input id="searchInput" placeholder="검색어를 입력하세요"/>
+            <button onclick="fnGoSearch();">Search</button>
+        </div>
+    </div>
+</header>
+</html>
